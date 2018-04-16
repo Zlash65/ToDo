@@ -1,0 +1,32 @@
+<ion-header>
+
+  <ion-navbar hideBackButton="true">
+	<ion-title>ToDoList</ion-title>
+	<ion-buttons end>
+		<button ion-button (click)="presentPopover($event)">
+			<ion-icon name="menu"></ion-icon>
+		</button>
+	</ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-list class="accordion-list">
+		<ion-list-header *ngFor="let item of data;">
+			<ion-checkbox id="{{item.name}}"></ion-checkbox>
+			<button item-end ion-item (click)="displayTodo(item)" class="list-item">
+				{{ item.subject }}
+			</button>			
+		</ion-list-header>
+	</ion-list>
+
+	<ion-fab bottom right>
+		<button ion-fab (click)="addToDo()">
+			<ion-icon ios="md-add" md="md-add"></ion-icon>
+		</button>
+	</ion-fab>
+
+</ion-content>
