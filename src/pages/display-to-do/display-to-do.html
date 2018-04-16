@@ -1,0 +1,40 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title> {{ title }} </ion-title>
+		<ion-buttons end *ngIf="title!='New Todo' || update==true">
+			<button ion-button (click)="presentPopover($event)">
+				<ion-icon name="menu"></ion-icon>
+			</button>
+		</ion-buttons>
+	</ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	<ion-item>
+		<ion-label color="primary" stacked>Subject</ion-label>
+		<ion-input id="subject" disabled="{{disabled}}" [(ngModel)]="subject"> </ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-label color="primary" stacked>Status</ion-label>
+		<ion-select id="status" disabled="{{disabled}}" [(ngModel)]="status">
+			<ion-option *ngFor="let d of statusList" value="{{d}}">
+				{{d}}
+			</ion-option>
+		</ion-select>
+	</ion-item>
+
+	<ion-item>
+		<ion-label color="primary" stacked>Description</ion-label>
+		<ion-textarea id="description" disabled="{{disabled}}" [(ngModel)]="description"> </ion-textarea>
+	</ion-item>
+
+	<div padding>
+			<button *ngIf="update==true" block ion-button (click)="updateToDo()"> Update </button>
+		<button *ngIf="disabled==false && update!=true" block ion-button (click)="saveToDo()"> Save </button>
+	</div>
+
+</ion-content>
