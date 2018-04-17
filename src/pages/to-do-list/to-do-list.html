@@ -14,6 +14,10 @@
 
 <ion-content padding>
 
+	<ion-refresher (ionRefresh)="doRefresh($event)">
+		<ion-refresher-content></ion-refresher-content>
+	</ion-refresher>
+
 	<ion-list class="accordion-list">
 		<ion-list-header *ngFor="let item of data;">
 			<ion-checkbox id="{{item.name}}"></ion-checkbox>

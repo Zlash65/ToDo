@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, AlertController,
-	PopoverController, ViewController, ToastController, App } from 'ionic-angular';
+	PopoverController, ViewController, ToastController, App, LoadingController } from 'ionic-angular';
 import { HomePage } from '../home/home';
 import { Storage } from '@ionic/storage';
 import { DisplayToDoPage } from '../display-to-do/display-to-do';
 import { PopoverComponent } from '../../components/popover/popover';
+import { Network } from '@ionic-native/network';
 
 @IonicPage()
 @Component({
@@ -19,7 +20,23 @@ export class ToDoListPage {
 
 	constructor(public navCtrl: NavController, public navParams: NavParams,
 		private toastCtrl: ToastController, public popoverCtrl: PopoverController,
-		private storage: Storage, private viewCtrl: ViewController, private app: App) { }
+		private storage: Storage, private viewCtrl: ViewController,
+		private network: Network, public loadingCtrl: LoadingController) {
+			// watch network for a connection
+			this.network.onConnect().subscribe(() => {
+				console.log('network connected!');
+			});
+
+			// watch network for a disconnection
+			this.network.onDisconnect().subscribe(() => {
+				console.log('network disconnected!');
+			});
+		}
+
+	doRefresh(refresher) {
+		this.ionViewDidEnter();
+		refresher.complete();
+	}
 
 	async ionViewDidLoad() {
 		this.frappe = (<any>window).frappe;
@@ -33,7 +50,23 @@ export class ToDoListPage {
 	}
 
 	ionViewDidEnter() {
-		this.loadData();
+		if(this.popover){
+			this.popover.dismiss();
+			this.popover = null;
+		}
+		let loading = this.loadingCtrl.create({
+			content: 'Please wait...'
+		});
+		loading.present();
+		setTimeout(() => {
+			if(this.network.type=='wifi' || this.network.type=='4g' || this.network.type=='3g') {
+				this.loadData();
+			}
+			else {
+				this.combinify();
+			}
+			loading.dismiss();
+		  }, 1000);
 	}
 
 	async loadData() {
@@ -41,21 +74,36 @@ export class ToDoListPage {
 		try {
 			await this.frappe.db.getAll({doctype: "ToDo",
 				fields: ["name", "status", "description", "subject"]}).then(r => {
-				this.data = r;
+				this.combinify(r);
 			});
 		} catch (error) {
 			exception = error;
 			let toast = this.toastCtrl.create({
 				message: 'Server unreachable',
-				duration: 2000,
+				duration: 1000,
 				position: 'bottom'
 			});
 			
 			toast.present();
-			this.navCtrl.popToRoot();
+		}
+	}
 
+	async combinify(serv_data=[]) {
+		let ld = [];
+
+		await this.storage.get("local_data").then(r => {
+			ld = r;
+		});
+
+		if(serv_data.length <= 0){
+			await this.storage.get("serv_data").then(r => {
+				serv_data = r;
+			});
+		} else {
+			await this.storage.set("serv_data", serv_data);
 		}
 
+		this.data = ld.concat(serv_data);
 	}
 
 	displayTodo(item) {
