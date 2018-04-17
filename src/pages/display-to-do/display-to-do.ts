@@ -2,6 +2,8 @@ import { Component, Input } from '@angular/core';
 import { IonicPage, NavController, NavParams, PopoverController } from 'ionic-angular';
 import { ToDoListPage } from '../to-do-list/to-do-list';
 import { PopoverComponent } from '../../components/popover/popover';
+import { Network } from '@ionic-native/network';
+import { Storage } from '@ionic/storage';
 
 @IonicPage()
 @Component({
@@ -23,7 +25,17 @@ export class DisplayToDoPage {
 
 
 	constructor(public navCtrl: NavController, public navParams: NavParams,
-		public popoverCtrl: PopoverController) { }
+		public popoverCtrl: PopoverController, private network: Network, private storage: Storage) {
+			// watch network for a connection
+			this.network.onConnect().subscribe(() => {
+				console.log('network connected!');
+			});
+
+			// watch network for a disconnection
+			this.network.onDisconnect().subscribe(() => {
+				console.log('network disconnected!');
+			});
+		}
 
 	ionViewDidLoad() {
 		this.statusList = ["Open", "Closed"];
@@ -52,24 +64,50 @@ export class DisplayToDoPage {
 	}
 
 	async saveToDo() {
-		await this.frappe.db.insert("ToDo", {"subject": this.subject, "description": this.description})
-			.then(r => {
-				this.item = r;
-				this.title = this.item.name;
-				this.disabled = true;
-				this.update = false;
-		});
+		let temp_data = {"subject": this.subject, "description": this.description, "status": this.status };
+		if(this.network.type=='wifi' || this.network.type=='4g' || this.network.type=='3g') {
+			await this.frappe.db.insert("ToDo", temp_data)
+				.then(r => {
+					this.item = r;
+					this.title = this.item.name;
+			});
+			let temp;
+			await this.storage.get("serv_data").then(r => {
+				temp = r.concat(this.item);
+			});
+			await this.storage.set("serv_data", temp);
+		}
+		else {
+			let temp;
+			await this.storage.get("local_data").then(r => {
+				temp = r.concat(temp_data);
+			});
+			await this.storage.set("local_data", temp).then(r => {
+			});
+			this.title = "ToDo";
+		}
+		this.disabled = true;
+		this.update = false;
 	}
 
 	async updateToDo() {
 		this.item.subject = this.subject;
 		this.item.status = this.status;
 		this.item.description = this.description;
-		await this.frappe.db.update("ToDo", this.item)
-			.then(r => {
-				this.disabled = true;
-				this.update = false;
-		});
+		if(this.network.type=='wifi' || this.network.type=='4g' || this.network.type=='3g') {
+			await this.frappe.db.update("ToDo", this.item)
+				.then(r => {
+			});
+		}
+		else {
+			let temp;
+			await this.storage.get("local_data").then(r => {
+				temp = r.concat([this.item]);
+			});
+			await this.storage.set("local_data", temp);
+		}
+		this.disabled = true;
+		this.update = false;
 	}
 
 	presentPopover(myEvent) {
