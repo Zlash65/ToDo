@@ -12,14 +12,14 @@ import { Network } from '@ionic-native/network';
 export class HomePage {
 	frappe:any;
 	title:any;
-	but:String;
+	save_connect:String;
 	@Input() user;
 	@Input() server;
 
 	constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,
 		private storage: Storage, private network: Network, private toastCtrl: ToastController,
 		public navParams: NavParams) {
-
+		this.setupLocalData();
 	}
 
 	async ionViewDidEnter() {
@@ -37,10 +37,10 @@ export class HomePage {
 
 		if(temp){
 			this.title = temp;
-			this.but = "Save";
+			this.save_connect = "Save";
 		} else {
 			this.title = "ToDo";
-			this.but = "Connect";
+			this.save_connect = "Connect";
 		}
 
 		this.frappe = (<any>window).frappe;
@@ -66,18 +66,11 @@ export class HomePage {
 		var me = this;
 
 		if(this.user) {
-			// show loading dialog till server connection is established
-			let loading = this.loadingCtrl.create({
-				content: 'Please wait...'
-			});
-			loading.present();
 			this.storage.set('server', this.server);
 			this.storage.set('user', this.user);
 			await initFrappe(this.server).then(r => {
-				// route to ToDo page and dismiss loading
 				this.frappe = r;
 				me.navCtrl.push(ToDoListPage);
-				loading.dismiss();
 			});
 		} else {
 			let toast = this.toastCtrl.create({
@@ -88,6 +81,19 @@ export class HomePage {
 			
 			toast.present();
 		}
+	}
+
+	async setupLocalData() {
+		await this.storage.get("local_data").then(r => {
+			if(!r) {
+				this.storage.set("local_data", []);
+			}
+		});
+		await this.storage.get("serv_data").then(r => {
+			if(!r) {
+				this.storage.set("serv_data", []);
+			}
+		});
 	}
 
 }

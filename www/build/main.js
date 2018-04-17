@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 128:
+/***/ 129:
 /***/ (function(module, exports) {
 
 function webpackEmptyAsyncContext(req) {
@@ -13,11 +13,11 @@ function webpackEmptyAsyncContext(req) {
 webpackEmptyAsyncContext.keys = function() { return []; };
 webpackEmptyAsyncContext.resolve = webpackEmptyAsyncContext;
 module.exports = webpackEmptyAsyncContext;
-webpackEmptyAsyncContext.id = 128;
+webpackEmptyAsyncContext.id = 129;
 
 /***/ }),
 
-/***/ 169:
+/***/ 170:
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
@@ -41,12 +41,12 @@ function webpackAsyncContext(req) {
 webpackAsyncContext.keys = function webpackAsyncContextKeys() {
 	return Object.keys(map);
 };
-webpackAsyncContext.id = 169;
+webpackAsyncContext.id = 170;
 module.exports = webpackAsyncContext;
 
 /***/ }),
 
-/***/ 170:
+/***/ 171:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -61,7 +61,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_frappejs_backends_http___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_frappejs_backends_http__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_socket_io_client__ = __webpack_require__(426);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_socket_io_client___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_4_socket_io_client__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_frappejs_utils_observable__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_frappejs_utils_observable__ = __webpack_require__(92);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_frappejs_utils_observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_frappejs_utils_observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_node_fetch__ = __webpack_require__(447);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_node_fetch___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_6_node_fetch__);
@@ -100,7 +100,7 @@ async function initFrappe(serv) {
 
 /***/ }),
 
-/***/ 171:
+/***/ 172:
 /***/ (function(module, exports) {
 
 const number_formats = {
@@ -434,14 +434,14 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(348);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_status_bar__ = __webpack_require__(349);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__app_component__ = __webpack_require__(474);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_to_do_list_to_do_list__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_display_to_do_display_to_do__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_popover_popover__ = __webpack_require__(89);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__frappe__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_network__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_home_home__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_to_do_list_to_do_list__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_display_to_do_display_to_do__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__components_popover_popover__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__frappe__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_network__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -516,10 +516,10 @@ var AppModule = /** @class */ (function () {
 /***/ (function(module, exports, __webpack_require__) {
 
 const utils = __webpack_require__(402);
-const number_format = __webpack_require__(171);
+const number_format = __webpack_require__(172);
 const format = __webpack_require__(403);
 const errors = __webpack_require__(406);
-const BaseDocument = __webpack_require__(54);
+const BaseDocument = __webpack_require__(55);
 const BaseMeta = __webpack_require__(408);
 
 module.exports = {
@@ -613,7 +613,7 @@ module.exports = {
 /***/ 403:
 /***/ (function(module, exports, __webpack_require__) {
 
-const number_format = __webpack_require__(171);
+const number_format = __webpack_require__(172);
 const markdown = new (__webpack_require__(404).Converter)();
 const moment = __webpack_require__(1);
 const frappe = __webpack_require__(27);
@@ -650,252 +650,252 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 var map = {
-	"./af": 173,
-	"./af.js": 173,
-	"./ar": 174,
-	"./ar-dz": 175,
-	"./ar-dz.js": 175,
-	"./ar-kw": 176,
-	"./ar-kw.js": 176,
-	"./ar-ly": 177,
-	"./ar-ly.js": 177,
-	"./ar-ma": 178,
-	"./ar-ma.js": 178,
-	"./ar-sa": 179,
-	"./ar-sa.js": 179,
-	"./ar-tn": 180,
-	"./ar-tn.js": 180,
-	"./ar.js": 174,
-	"./az": 181,
-	"./az.js": 181,
-	"./be": 182,
-	"./be.js": 182,
-	"./bg": 183,
-	"./bg.js": 183,
-	"./bm": 184,
-	"./bm.js": 184,
-	"./bn": 185,
-	"./bn.js": 185,
-	"./bo": 186,
-	"./bo.js": 186,
-	"./br": 187,
-	"./br.js": 187,
-	"./bs": 188,
-	"./bs.js": 188,
-	"./ca": 189,
-	"./ca.js": 189,
-	"./cs": 190,
-	"./cs.js": 190,
-	"./cv": 191,
-	"./cv.js": 191,
-	"./cy": 192,
-	"./cy.js": 192,
-	"./da": 193,
-	"./da.js": 193,
-	"./de": 194,
-	"./de-at": 195,
-	"./de-at.js": 195,
-	"./de-ch": 196,
-	"./de-ch.js": 196,
-	"./de.js": 194,
-	"./dv": 197,
-	"./dv.js": 197,
-	"./el": 198,
-	"./el.js": 198,
-	"./en-au": 199,
-	"./en-au.js": 199,
-	"./en-ca": 200,
-	"./en-ca.js": 200,
-	"./en-gb": 201,
-	"./en-gb.js": 201,
-	"./en-ie": 202,
-	"./en-ie.js": 202,
-	"./en-il": 203,
-	"./en-il.js": 203,
-	"./en-nz": 204,
-	"./en-nz.js": 204,
-	"./eo": 205,
-	"./eo.js": 205,
-	"./es": 206,
-	"./es-do": 207,
-	"./es-do.js": 207,
-	"./es-us": 208,
-	"./es-us.js": 208,
-	"./es.js": 206,
-	"./et": 209,
-	"./et.js": 209,
-	"./eu": 210,
-	"./eu.js": 210,
-	"./fa": 211,
-	"./fa.js": 211,
-	"./fi": 212,
-	"./fi.js": 212,
-	"./fo": 213,
-	"./fo.js": 213,
-	"./fr": 214,
-	"./fr-ca": 215,
-	"./fr-ca.js": 215,
-	"./fr-ch": 216,
-	"./fr-ch.js": 216,
-	"./fr.js": 214,
-	"./fy": 217,
-	"./fy.js": 217,
-	"./gd": 218,
-	"./gd.js": 218,
-	"./gl": 219,
-	"./gl.js": 219,
-	"./gom-latn": 220,
-	"./gom-latn.js": 220,
-	"./gu": 221,
-	"./gu.js": 221,
-	"./he": 222,
-	"./he.js": 222,
-	"./hi": 223,
-	"./hi.js": 223,
-	"./hr": 224,
-	"./hr.js": 224,
-	"./hu": 225,
-	"./hu.js": 225,
-	"./hy-am": 226,
-	"./hy-am.js": 226,
-	"./id": 227,
-	"./id.js": 227,
-	"./is": 228,
-	"./is.js": 228,
-	"./it": 229,
-	"./it.js": 229,
-	"./ja": 230,
-	"./ja.js": 230,
-	"./jv": 231,
-	"./jv.js": 231,
-	"./ka": 232,
-	"./ka.js": 232,
-	"./kk": 233,
-	"./kk.js": 233,
-	"./km": 234,
-	"./km.js": 234,
-	"./kn": 235,
-	"./kn.js": 235,
-	"./ko": 236,
-	"./ko.js": 236,
-	"./ky": 237,
-	"./ky.js": 237,
-	"./lb": 238,
-	"./lb.js": 238,
-	"./lo": 239,
-	"./lo.js": 239,
-	"./lt": 240,
-	"./lt.js": 240,
-	"./lv": 241,
-	"./lv.js": 241,
-	"./me": 242,
-	"./me.js": 242,
-	"./mi": 243,
-	"./mi.js": 243,
-	"./mk": 244,
-	"./mk.js": 244,
-	"./ml": 245,
-	"./ml.js": 245,
-	"./mn": 246,
-	"./mn.js": 246,
-	"./mr": 247,
-	"./mr.js": 247,
-	"./ms": 248,
-	"./ms-my": 249,
-	"./ms-my.js": 249,
-	"./ms.js": 248,
-	"./mt": 250,
-	"./mt.js": 250,
-	"./my": 251,
-	"./my.js": 251,
-	"./nb": 252,
-	"./nb.js": 252,
-	"./ne": 253,
-	"./ne.js": 253,
-	"./nl": 254,
-	"./nl-be": 255,
-	"./nl-be.js": 255,
-	"./nl.js": 254,
-	"./nn": 256,
-	"./nn.js": 256,
-	"./pa-in": 257,
-	"./pa-in.js": 257,
-	"./pl": 258,
-	"./pl.js": 258,
-	"./pt": 259,
-	"./pt-br": 260,
-	"./pt-br.js": 260,
-	"./pt.js": 259,
-	"./ro": 261,
-	"./ro.js": 261,
-	"./ru": 262,
-	"./ru.js": 262,
-	"./sd": 263,
-	"./sd.js": 263,
-	"./se": 264,
-	"./se.js": 264,
-	"./si": 265,
-	"./si.js": 265,
-	"./sk": 266,
-	"./sk.js": 266,
-	"./sl": 267,
-	"./sl.js": 267,
-	"./sq": 268,
-	"./sq.js": 268,
-	"./sr": 269,
-	"./sr-cyrl": 270,
-	"./sr-cyrl.js": 270,
-	"./sr.js": 269,
-	"./ss": 271,
-	"./ss.js": 271,
-	"./sv": 272,
-	"./sv.js": 272,
-	"./sw": 273,
-	"./sw.js": 273,
-	"./ta": 274,
-	"./ta.js": 274,
-	"./te": 275,
-	"./te.js": 275,
-	"./tet": 276,
-	"./tet.js": 276,
-	"./tg": 277,
-	"./tg.js": 277,
-	"./th": 278,
-	"./th.js": 278,
-	"./tl-ph": 279,
-	"./tl-ph.js": 279,
-	"./tlh": 280,
-	"./tlh.js": 280,
-	"./tr": 281,
-	"./tr.js": 281,
-	"./tzl": 282,
-	"./tzl.js": 282,
-	"./tzm": 283,
-	"./tzm-latn": 284,
-	"./tzm-latn.js": 284,
-	"./tzm.js": 283,
-	"./ug-cn": 285,
-	"./ug-cn.js": 285,
-	"./uk": 286,
-	"./uk.js": 286,
-	"./ur": 287,
-	"./ur.js": 287,
-	"./uz": 288,
-	"./uz-latn": 289,
-	"./uz-latn.js": 289,
-	"./uz.js": 288,
-	"./vi": 290,
-	"./vi.js": 290,
-	"./x-pseudo": 291,
-	"./x-pseudo.js": 291,
-	"./yo": 292,
-	"./yo.js": 292,
-	"./zh-cn": 293,
-	"./zh-cn.js": 293,
-	"./zh-hk": 294,
-	"./zh-hk.js": 294,
-	"./zh-tw": 295,
-	"./zh-tw.js": 295
+	"./af": 174,
+	"./af.js": 174,
+	"./ar": 175,
+	"./ar-dz": 176,
+	"./ar-dz.js": 176,
+	"./ar-kw": 177,
+	"./ar-kw.js": 177,
+	"./ar-ly": 178,
+	"./ar-ly.js": 178,
+	"./ar-ma": 179,
+	"./ar-ma.js": 179,
+	"./ar-sa": 180,
+	"./ar-sa.js": 180,
+	"./ar-tn": 181,
+	"./ar-tn.js": 181,
+	"./ar.js": 175,
+	"./az": 182,
+	"./az.js": 182,
+	"./be": 183,
+	"./be.js": 183,
+	"./bg": 184,
+	"./bg.js": 184,
+	"./bm": 185,
+	"./bm.js": 185,
+	"./bn": 186,
+	"./bn.js": 186,
+	"./bo": 187,
+	"./bo.js": 187,
+	"./br": 188,
+	"./br.js": 188,
+	"./bs": 189,
+	"./bs.js": 189,
+	"./ca": 190,
+	"./ca.js": 190,
+	"./cs": 191,
+	"./cs.js": 191,
+	"./cv": 192,
+	"./cv.js": 192,
+	"./cy": 193,
+	"./cy.js": 193,
+	"./da": 194,
+	"./da.js": 194,
+	"./de": 195,
+	"./de-at": 196,
+	"./de-at.js": 196,
+	"./de-ch": 197,
+	"./de-ch.js": 197,
+	"./de.js": 195,
+	"./dv": 198,
+	"./dv.js": 198,
+	"./el": 199,
+	"./el.js": 199,
+	"./en-au": 200,
+	"./en-au.js": 200,
+	"./en-ca": 201,
+	"./en-ca.js": 201,
+	"./en-gb": 202,
+	"./en-gb.js": 202,
+	"./en-ie": 203,
+	"./en-ie.js": 203,
+	"./en-il": 204,
+	"./en-il.js": 204,
+	"./en-nz": 205,
+	"./en-nz.js": 205,
+	"./eo": 206,
+	"./eo.js": 206,
+	"./es": 207,
+	"./es-do": 208,
+	"./es-do.js": 208,
+	"./es-us": 209,
+	"./es-us.js": 209,
+	"./es.js": 207,
+	"./et": 210,
+	"./et.js": 210,
+	"./eu": 211,
+	"./eu.js": 211,
+	"./fa": 212,
+	"./fa.js": 212,
+	"./fi": 213,
+	"./fi.js": 213,
+	"./fo": 214,
+	"./fo.js": 214,
+	"./fr": 215,
+	"./fr-ca": 216,
+	"./fr-ca.js": 216,
+	"./fr-ch": 217,
+	"./fr-ch.js": 217,
+	"./fr.js": 215,
+	"./fy": 218,
+	"./fy.js": 218,
+	"./gd": 219,
+	"./gd.js": 219,
+	"./gl": 220,
+	"./gl.js": 220,
+	"./gom-latn": 221,
+	"./gom-latn.js": 221,
+	"./gu": 222,
+	"./gu.js": 222,
+	"./he": 223,
+	"./he.js": 223,
+	"./hi": 224,
+	"./hi.js": 224,
+	"./hr": 225,
+	"./hr.js": 225,
+	"./hu": 226,
+	"./hu.js": 226,
+	"./hy-am": 227,
+	"./hy-am.js": 227,
+	"./id": 228,
+	"./id.js": 228,
+	"./is": 229,
+	"./is.js": 229,
+	"./it": 230,
+	"./it.js": 230,
+	"./ja": 231,
+	"./ja.js": 231,
+	"./jv": 232,
+	"./jv.js": 232,
+	"./ka": 233,
+	"./ka.js": 233,
+	"./kk": 234,
+	"./kk.js": 234,
+	"./km": 235,
+	"./km.js": 235,
+	"./kn": 236,
+	"./kn.js": 236,
+	"./ko": 237,
+	"./ko.js": 237,
+	"./ky": 238,
+	"./ky.js": 238,
+	"./lb": 239,
+	"./lb.js": 239,
+	"./lo": 240,
+	"./lo.js": 240,
+	"./lt": 241,
+	"./lt.js": 241,
+	"./lv": 242,
+	"./lv.js": 242,
+	"./me": 243,
+	"./me.js": 243,
+	"./mi": 244,
+	"./mi.js": 244,
+	"./mk": 245,
+	"./mk.js": 245,
+	"./ml": 246,
+	"./ml.js": 246,
+	"./mn": 247,
+	"./mn.js": 247,
+	"./mr": 248,
+	"./mr.js": 248,
+	"./ms": 249,
+	"./ms-my": 250,
+	"./ms-my.js": 250,
+	"./ms.js": 249,
+	"./mt": 251,
+	"./mt.js": 251,
+	"./my": 252,
+	"./my.js": 252,
+	"./nb": 253,
+	"./nb.js": 253,
+	"./ne": 254,
+	"./ne.js": 254,
+	"./nl": 255,
+	"./nl-be": 256,
+	"./nl-be.js": 256,
+	"./nl.js": 255,
+	"./nn": 257,
+	"./nn.js": 257,
+	"./pa-in": 258,
+	"./pa-in.js": 258,
+	"./pl": 259,
+	"./pl.js": 259,
+	"./pt": 260,
+	"./pt-br": 261,
+	"./pt-br.js": 261,
+	"./pt.js": 260,
+	"./ro": 262,
+	"./ro.js": 262,
+	"./ru": 263,
+	"./ru.js": 263,
+	"./sd": 264,
+	"./sd.js": 264,
+	"./se": 265,
+	"./se.js": 265,
+	"./si": 266,
+	"./si.js": 266,
+	"./sk": 267,
+	"./sk.js": 267,
+	"./sl": 268,
+	"./sl.js": 268,
+	"./sq": 269,
+	"./sq.js": 269,
+	"./sr": 270,
+	"./sr-cyrl": 271,
+	"./sr-cyrl.js": 271,
+	"./sr.js": 270,
+	"./ss": 272,
+	"./ss.js": 272,
+	"./sv": 273,
+	"./sv.js": 273,
+	"./sw": 274,
+	"./sw.js": 274,
+	"./ta": 275,
+	"./ta.js": 275,
+	"./te": 276,
+	"./te.js": 276,
+	"./tet": 277,
+	"./tet.js": 277,
+	"./tg": 278,
+	"./tg.js": 278,
+	"./th": 279,
+	"./th.js": 279,
+	"./tl-ph": 280,
+	"./tl-ph.js": 280,
+	"./tlh": 281,
+	"./tlh.js": 281,
+	"./tr": 282,
+	"./tr.js": 282,
+	"./tzl": 283,
+	"./tzl.js": 283,
+	"./tzm": 284,
+	"./tzm-latn": 285,
+	"./tzm-latn.js": 285,
+	"./tzm.js": 284,
+	"./ug-cn": 286,
+	"./ug-cn.js": 286,
+	"./uk": 287,
+	"./uk.js": 287,
+	"./ur": 288,
+	"./ur.js": 288,
+	"./uz": 289,
+	"./uz-latn": 290,
+	"./uz-latn.js": 290,
+	"./uz.js": 289,
+	"./vi": 291,
+	"./vi.js": 291,
+	"./x-pseudo": 292,
+	"./x-pseudo.js": 292,
+	"./yo": 293,
+	"./yo.js": 293,
+	"./zh-cn": 294,
+	"./zh-cn.js": 294,
+	"./zh-hk": 295,
+	"./zh-hk.js": 295,
+	"./zh-tw": 296,
+	"./zh-tw.js": 296
 };
 function webpackContext(req) {
 	return __webpack_require__(webpackContextResolve(req));
@@ -1040,7 +1040,7 @@ module.exports = {
 /***/ 408:
 /***/ (function(module, exports, __webpack_require__) {
 
-const BaseDocument = __webpack_require__(54);
+const BaseDocument = __webpack_require__(55);
 const frappe = __webpack_require__(27);
 const model = __webpack_require__(409)
 
@@ -1477,7 +1477,7 @@ module.exports = {
 /***/ 414:
 /***/ (function(module, exports, __webpack_require__) {
 
-const BaseDocument = __webpack_require__(54);
+const BaseDocument = __webpack_require__(55);
 const frappe = __webpack_require__(27);
 
 module.exports = class FormSelector extends BaseDocument {
@@ -1589,7 +1589,7 @@ module.exports = {
 /***/ 416:
 /***/ (function(module, exports, __webpack_require__) {
 
-const BaseDocument = __webpack_require__(54);
+const BaseDocument = __webpack_require__(55);
 
 module.exports = class NumberSeries extends BaseDocument {
     validate() {
@@ -1886,7 +1886,7 @@ module.exports = {
 /***/ (function(module, exports, __webpack_require__) {
 
 const frappe = __webpack_require__(27);
-const Observable = __webpack_require__(91);
+const Observable = __webpack_require__(92);
 
 module.exports = class HTTPClient extends Observable {
     constructor({ server, protocol = 'http' }) {
@@ -2048,164 +2048,6 @@ module.exports = class HTTPClient extends Observable {
 
 /***/ }),
 
-/***/ 46:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToDoListPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__display_to_do_display_to_do__ = __webpack_require__(61);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_popover_popover__ = __webpack_require__(89);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    return new (P || (P = Promise))(function (resolve, reject) {
-        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
-        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
-        step((generator = generator.apply(thisArg, _arguments || [])).next());
-    });
-};
-var __generator = (this && this.__generator) || function (thisArg, body) {
-    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
-    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
-    function verb(n) { return function (v) { return step([n, v]); }; }
-    function step(op) {
-        if (f) throw new TypeError("Generator is already executing.");
-        while (_) try {
-            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
-            if (y = 0, t) op = [0, t.value];
-            switch (op[0]) {
-                case 0: case 1: t = op; break;
-                case 4: _.label++; return { value: op[1], done: false };
-                case 5: _.label++; y = op[1]; op = [0]; continue;
-                case 7: op = _.ops.pop(); _.trys.pop(); continue;
-                default:
-                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
-                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
-                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
-                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
-                    if (t[2]) _.ops.pop();
-                    _.trys.pop(); continue;
-            }
-            op = body.call(thisArg, _);
-        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
-        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
-    }
-};
-
-
-
-
-
-var ToDoListPage = /** @class */ (function () {
-    function ToDoListPage(navCtrl, navParams, toastCtrl, popoverCtrl, storage, viewCtrl, app) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.toastCtrl = toastCtrl;
-        this.popoverCtrl = popoverCtrl;
-        this.storage = storage;
-        this.viewCtrl = viewCtrl;
-        this.app = app;
-    }
-    ToDoListPage.prototype.ionViewDidLoad = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            return __generator(this, function (_a) {
-                this.frappe = window.frappe;
-                return [2 /*return*/];
-            });
-        });
-    };
-    ToDoListPage.prototype.ionViewCanLeave = function () {
-        if (this.popover) {
-            this.popover.dismiss();
-            this.popover = null;
-        }
-    };
-    ToDoListPage.prototype.ionViewDidEnter = function () {
-        this.loadData();
-    };
-    ToDoListPage.prototype.loadData = function () {
-        return __awaiter(this, void 0, void 0, function () {
-            var _this = this;
-            var exception, error_1, toast;
-            return __generator(this, function (_a) {
-                switch (_a.label) {
-                    case 0:
-                        exception = null;
-                        _a.label = 1;
-                    case 1:
-                        _a.trys.push([1, 3, , 4]);
-                        return [4 /*yield*/, this.frappe.db.getAll({ doctype: "ToDo",
-                                fields: ["name", "status", "description", "subject"] }).then(function (r) {
-                                _this.data = r;
-                            })];
-                    case 2:
-                        _a.sent();
-                        return [3 /*break*/, 4];
-                    case 3:
-                        error_1 = _a.sent();
-                        exception = error_1;
-                        toast = this.toastCtrl.create({
-                            message: 'Server unreachable',
-                            duration: 2000,
-                            position: 'bottom'
-                        });
-                        toast.present();
-                        this.navCtrl.popToRoot();
-                        return [3 /*break*/, 4];
-                    case 4: return [2 /*return*/];
-                }
-            });
-        });
-    };
-    ToDoListPage.prototype.displayTodo = function (item) {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__display_to_do_display_to_do__["a" /* DisplayToDoPage */], {
-            item: item,
-            disabled: true
-        });
-    };
-    ToDoListPage.prototype.addToDo = function () {
-        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__display_to_do_display_to_do__["a" /* DisplayToDoPage */], {
-            disabled: false
-        });
-    };
-    ToDoListPage.prototype.presentPopover = function (myEvent) {
-        if (!this.popover) {
-            this.me = { me: this };
-            this.popover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components_popover_popover__["a" /* PopoverComponent */], this.me, { cssClass: 'custom-popover' });
-            this.popover.present({
-                ev: myEvent
-            });
-        }
-        else {
-            this.popover.dismiss();
-            this.popover = null;
-        }
-    };
-    ToDoListPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-to-do-list',template:/*ion-inline-start:"/Users/allen/Projects/ToDo/src/pages/to-do-list/to-do-list.html"*/'<ion-header>\n\n  <ion-navbar hideBackButton="true">\n	<ion-title>ToDoList</ion-title>\n	<ion-buttons end>\n		<button ion-button (click)="presentPopover($event)">\n			<ion-icon name="menu"></ion-icon>\n		</button>\n	</ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n	<ion-list class="accordion-list">\n		<ion-list-header *ngFor="let item of data;">\n			<ion-checkbox id="{{item.name}}"></ion-checkbox>\n			<button item-end ion-item (click)="displayTodo(item)" class="list-item">\n				{{ item.subject }}\n			</button>			\n		</ion-list-header>\n	</ion-list>\n\n	<ion-fab bottom right>\n		<button ion-fab (click)="addToDo()">\n			<ion-icon ios="md-add" md="md-add"></ion-icon>\n		</button>\n	</ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"/Users/allen/Projects/ToDo/src/pages/to-do-list/to-do-list.html"*/,
-        }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* PopoverController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]) === "function" && _g || Object])
-    ], ToDoListPage);
-    return ToDoListPage;
-    var _a, _b, _c, _d, _e, _f, _g;
-}());
-
-//# sourceMappingURL=to-do-list.js.map
-
-/***/ }),
-
 /***/ 474:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -2215,9 +2057,9 @@ var ToDoListPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(349);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(348);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_to_do_list_to_do_list__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_display_to_do_display_to_do__ = __webpack_require__(61);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_to_do_list_to_do_list__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_display_to_do_display_to_do__ = __webpack_require__(62);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2276,21 +2118,243 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/allen/Projects/ToDo/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/allen/Projects/ToDo/src/app/app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
 
-/***/ 54:
+/***/ 48:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ToDoListPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_storage__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__display_to_do_display_to_do__ = __webpack_require__(62);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_popover_popover__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__ = __webpack_require__(47);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
+    return new (P || (P = Promise))(function (resolve, reject) {
+        function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
+        function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
+        step((generator = generator.apply(thisArg, _arguments || [])).next());
+    });
+};
+var __generator = (this && this.__generator) || function (thisArg, body) {
+    var _ = { label: 0, sent: function() { if (t[0] & 1) throw t[1]; return t[1]; }, trys: [], ops: [] }, f, y, t, g;
+    return g = { next: verb(0), "throw": verb(1), "return": verb(2) }, typeof Symbol === "function" && (g[Symbol.iterator] = function() { return this; }), g;
+    function verb(n) { return function (v) { return step([n, v]); }; }
+    function step(op) {
+        if (f) throw new TypeError("Generator is already executing.");
+        while (_) try {
+            if (f = 1, y && (t = y[op[0] & 2 ? "return" : op[0] ? "throw" : "next"]) && !(t = t.call(y, op[1])).done) return t;
+            if (y = 0, t) op = [0, t.value];
+            switch (op[0]) {
+                case 0: case 1: t = op; break;
+                case 4: _.label++; return { value: op[1], done: false };
+                case 5: _.label++; y = op[1]; op = [0]; continue;
+                case 7: op = _.ops.pop(); _.trys.pop(); continue;
+                default:
+                    if (!(t = _.trys, t = t.length > 0 && t[t.length - 1]) && (op[0] === 6 || op[0] === 2)) { _ = 0; continue; }
+                    if (op[0] === 3 && (!t || (op[1] > t[0] && op[1] < t[3]))) { _.label = op[1]; break; }
+                    if (op[0] === 6 && _.label < t[1]) { _.label = t[1]; t = op; break; }
+                    if (t && _.label < t[2]) { _.label = t[2]; _.ops.push(op); break; }
+                    if (t[2]) _.ops.pop();
+                    _.trys.pop(); continue;
+            }
+            op = body.call(thisArg, _);
+        } catch (e) { op = [6, e]; y = 0; } finally { f = t = 0; }
+        if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
+    }
+};
+
+
+
+
+
+
+var ToDoListPage = /** @class */ (function () {
+    function ToDoListPage(navCtrl, navParams, toastCtrl, popoverCtrl, storage, viewCtrl, network, loadingCtrl) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.toastCtrl = toastCtrl;
+        this.popoverCtrl = popoverCtrl;
+        this.storage = storage;
+        this.viewCtrl = viewCtrl;
+        this.network = network;
+        this.loadingCtrl = loadingCtrl;
+        // watch network for a connection
+        this.network.onConnect().subscribe(function () {
+            console.log('network connected!');
+        });
+        // watch network for a disconnection
+        this.network.onDisconnect().subscribe(function () {
+            console.log('network disconnected!');
+        });
+    }
+    ToDoListPage.prototype.doRefresh = function (refresher) {
+        this.ionViewDidEnter();
+        refresher.complete();
+    };
+    ToDoListPage.prototype.ionViewDidLoad = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            return __generator(this, function (_a) {
+                this.frappe = window.frappe;
+                return [2 /*return*/];
+            });
+        });
+    };
+    ToDoListPage.prototype.ionViewCanLeave = function () {
+        if (this.popover) {
+            this.popover.dismiss();
+            this.popover = null;
+        }
+    };
+    ToDoListPage.prototype.ionViewDidEnter = function () {
+        var _this = this;
+        if (this.popover) {
+            this.popover.dismiss();
+            this.popover = null;
+        }
+        var loading = this.loadingCtrl.create({
+            content: 'Please wait...'
+        });
+        loading.present();
+        setTimeout(function () {
+            if (_this.network.type == 'wifi' || _this.network.type == '4g' || _this.network.type == '3g') {
+                _this.loadData();
+            }
+            else {
+                _this.combinify();
+            }
+            loading.dismiss();
+        }, 1000);
+    };
+    ToDoListPage.prototype.loadData = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            var exception, error_1, toast;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        exception = null;
+                        _a.label = 1;
+                    case 1:
+                        _a.trys.push([1, 3, , 4]);
+                        return [4 /*yield*/, this.frappe.db.getAll({ doctype: "ToDo",
+                                fields: ["name", "status", "description", "subject"] }).then(function (r) {
+                                _this.combinify(r);
+                            })];
+                    case 2:
+                        _a.sent();
+                        return [3 /*break*/, 4];
+                    case 3:
+                        error_1 = _a.sent();
+                        exception = error_1;
+                        toast = this.toastCtrl.create({
+                            message: 'Server unreachable',
+                            duration: 1000,
+                            position: 'bottom'
+                        });
+                        toast.present();
+                        return [3 /*break*/, 4];
+                    case 4: return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ToDoListPage.prototype.combinify = function (serv_data) {
+        if (serv_data === void 0) { serv_data = []; }
+        return __awaiter(this, void 0, void 0, function () {
+            var ld;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        ld = [];
+                        return [4 /*yield*/, this.storage.get("local_data").then(function (r) {
+                                ld = r;
+                            })];
+                    case 1:
+                        _a.sent();
+                        if (!(serv_data.length <= 0)) return [3 /*break*/, 3];
+                        return [4 /*yield*/, this.storage.get("serv_data").then(function (r) {
+                                serv_data = r;
+                            })];
+                    case 2:
+                        _a.sent();
+                        return [3 /*break*/, 5];
+                    case 3: return [4 /*yield*/, this.storage.set("serv_data", serv_data)];
+                    case 4:
+                        _a.sent();
+                        _a.label = 5;
+                    case 5:
+                        this.data = ld.concat(serv_data);
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
+    ToDoListPage.prototype.displayTodo = function (item) {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__display_to_do_display_to_do__["a" /* DisplayToDoPage */], {
+            item: item,
+            disabled: true
+        });
+    };
+    ToDoListPage.prototype.addToDo = function () {
+        this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__display_to_do_display_to_do__["a" /* DisplayToDoPage */], {
+            disabled: false
+        });
+    };
+    ToDoListPage.prototype.presentPopover = function (myEvent) {
+        if (!this.popover) {
+            this.me = { me: this };
+            this.popover = this.popoverCtrl.create(__WEBPACK_IMPORTED_MODULE_4__components_popover_popover__["a" /* PopoverComponent */], this.me, { cssClass: 'custom-popover' });
+            this.popover.present({
+                ev: myEvent
+            });
+        }
+        else {
+            this.popover.dismiss();
+            this.popover = null;
+        }
+    };
+    ToDoListPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-to-do-list',template:/*ion-inline-start:"/Users/allen/Projects/ToDo/src/pages/to-do-list/to-do-list.html"*/'<ion-header>\n\n  <ion-navbar hideBackButton="true">\n	<ion-title>ToDoList</ion-title>\n	<ion-buttons end>\n		<button ion-button (click)="presentPopover($event)">\n			<ion-icon name="menu"></ion-icon>\n		</button>\n	</ion-buttons>\n  </ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n\n	<ion-refresher (ionRefresh)="doRefresh($event)">\n		<ion-refresher-content></ion-refresher-content>\n	</ion-refresher>\n\n	<ion-list class="accordion-list">\n		<ion-list-header *ngFor="let item of data;">\n			<ion-checkbox id="{{item.name}}"></ion-checkbox>\n			<button item-end ion-item (click)="displayTodo(item)" class="list-item">\n				{{ item.subject }}\n			</button>			\n		</ion-list-header>\n	</ion-list>\n\n	<ion-fab bottom right>\n		<button ion-fab (click)="addToDo()">\n			<ion-icon ios="md-add" md="md-add"></ion-icon>\n		</button>\n	</ion-fab>\n\n</ion-content>\n'/*ion-inline-end:"/Users/allen/Projects/ToDo/src/pages/to-do-list/to-do-list.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* PopoverController */],
+            __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
+    ], ToDoListPage);
+    return ToDoListPage;
+}());
+
+//# sourceMappingURL=to-do-list.js.map
+
+/***/ }),
+
+/***/ 55:
 /***/ (function(module, exports, __webpack_require__) {
 
 const frappe = __webpack_require__(27);
-const Observable = __webpack_require__(91);
+const Observable = __webpack_require__(92);
 const naming = __webpack_require__(407);
 
 module.exports = class BaseDocument extends Observable {
@@ -2597,15 +2661,17 @@ module.exports = class BaseDocument extends Observable {
 
 /***/ }),
 
-/***/ 61:
+/***/ 62:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DisplayToDoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__to_do_list_to_do_list__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_popover_popover__ = __webpack_require__(89);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__to_do_list_to_do_list__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_popover_popover__ = __webpack_require__(90);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_storage__ = __webpack_require__(46);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2654,11 +2720,23 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
+
+
 var DisplayToDoPage = /** @class */ (function () {
-    function DisplayToDoPage(navCtrl, navParams, popoverCtrl) {
+    function DisplayToDoPage(navCtrl, navParams, popoverCtrl, network, storage) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.popoverCtrl = popoverCtrl;
+        this.network = network;
+        this.storage = storage;
+        // watch network for a connection
+        this.network.onConnect().subscribe(function () {
+            console.log('network connected!');
+        });
+        // watch network for a disconnection
+        this.network.onDisconnect().subscribe(function () {
+            console.log('network disconnected!');
+        });
     }
     DisplayToDoPage.prototype.ionViewDidLoad = function () {
         this.statusList = ["Open", "Closed"];
@@ -2688,17 +2766,42 @@ var DisplayToDoPage = /** @class */ (function () {
     DisplayToDoPage.prototype.saveToDo = function () {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
+            var temp_data, temp_1, temp_2;
             return __generator(this, function (_a) {
                 switch (_a.label) {
-                    case 0: return [4 /*yield*/, this.frappe.db.insert("ToDo", { "subject": this.subject, "description": this.description })
-                            .then(function (r) {
-                            _this.item = r;
-                            _this.title = _this.item.name;
-                            _this.disabled = true;
-                            _this.update = false;
-                        })];
+                    case 0:
+                        temp_data = { "subject": this.subject, "description": this.description, "status": this.status };
+                        if (!(this.network.type == 'wifi' || this.network.type == '4g' || this.network.type == '3g')) return [3 /*break*/, 4];
+                        return [4 /*yield*/, this.frappe.db.insert("ToDo", temp_data)
+                                .then(function (r) {
+                                _this.item = r;
+                                _this.title = _this.item.name;
+                            })];
                     case 1:
                         _a.sent();
+                        return [4 /*yield*/, this.storage.get("serv_data").then(function (r) {
+                                temp_1 = r.concat(_this.item);
+                            })];
+                    case 2:
+                        _a.sent();
+                        return [4 /*yield*/, this.storage.set("serv_data", temp_1)];
+                    case 3:
+                        _a.sent();
+                        return [3 /*break*/, 7];
+                    case 4: return [4 /*yield*/, this.storage.get("local_data").then(function (r) {
+                            temp_2 = r.concat(temp_data);
+                        })];
+                    case 5:
+                        _a.sent();
+                        return [4 /*yield*/, this.storage.set("local_data", temp_2).then(function (r) {
+                            })];
+                    case 6:
+                        _a.sent();
+                        this.title = "";
+                        _a.label = 7;
+                    case 7:
+                        this.disabled = true;
+                        this.update = false;
                         return [2 /*return*/];
                 }
             });
@@ -2707,19 +2810,32 @@ var DisplayToDoPage = /** @class */ (function () {
     DisplayToDoPage.prototype.updateToDo = function () {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
+            var temp_3;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         this.item.subject = this.subject;
                         this.item.status = this.status;
                         this.item.description = this.description;
+                        if (!(this.network.type == 'wifi' || this.network.type == '4g' || this.network.type == '3g')) return [3 /*break*/, 2];
                         return [4 /*yield*/, this.frappe.db.update("ToDo", this.item)
                                 .then(function (r) {
-                                _this.disabled = true;
-                                _this.update = false;
                             })];
                     case 1:
                         _a.sent();
+                        return [3 /*break*/, 5];
+                    case 2: return [4 /*yield*/, this.storage.get("local_data").then(function (r) {
+                            temp_3 = r.concat([_this.item]);
+                        })];
+                    case 3:
+                        _a.sent();
+                        return [4 /*yield*/, this.storage.set("local_data", temp_3)];
+                    case 4:
+                        _a.sent();
+                        _a.label = 5;
+                    case 5:
+                        this.disabled = true;
+                        this.update = false;
                         return [2 /*return*/];
                 }
             });
@@ -2754,25 +2870,26 @@ var DisplayToDoPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'page-display-to-do',template:/*ion-inline-start:"/Users/allen/Projects/ToDo/src/pages/display-to-do/display-to-do.html"*/'<ion-header>\n\n	<ion-navbar>\n		<ion-title> {{ title }} </ion-title>\n		<ion-buttons end *ngIf="title!=\'New Todo\' || update==true">\n			<button ion-button (click)="presentPopover($event)">\n				<ion-icon name="menu"></ion-icon>\n			</button>\n		</ion-buttons>\n	</ion-navbar>\n\n</ion-header>\n\n\n<ion-content padding>\n	<ion-item>\n		<ion-label color="primary" stacked>Subject</ion-label>\n		<ion-input id="subject" disabled="{{disabled}}" [(ngModel)]="subject"> </ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-label color="primary" stacked>Status</ion-label>\n		<ion-select id="status" disabled="{{disabled}}" [(ngModel)]="status">\n			<ion-option *ngFor="let d of statusList" value="{{d}}">\n				{{d}}\n			</ion-option>\n		</ion-select>\n	</ion-item>\n\n	<ion-item>\n		<ion-label color="primary" stacked>Description</ion-label>\n		<ion-textarea id="description" disabled="{{disabled}}" [(ngModel)]="description"> </ion-textarea>\n	</ion-item>\n\n	<div padding>\n			<button *ngIf="update==true" block ion-button (click)="updateToDo()"> Update </button>\n		<button *ngIf="disabled==false && update!=true" block ion-button (click)="saveToDo()"> Save </button>\n	</div>\n\n</ion-content>\n'/*ion-inline-end:"/Users/allen/Projects/ToDo/src/pages/display-to-do/display-to-do.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */],
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* PopoverController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* PopoverController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* PopoverController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_storage__["b" /* Storage */]) === "function" && _e || Object])
     ], DisplayToDoPage);
     return DisplayToDoPage;
+    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=display-to-do.js.map
 
 /***/ }),
 
-/***/ 89:
+/***/ 90:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PopoverComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_home_home__ = __webpack_require__(90);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_home_home__ = __webpack_require__(91);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_storage__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2821,12 +2938,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 
 
 
+
 var PopoverComponent = /** @class */ (function () {
-    function PopoverComponent(navParams, navCtrl, storage, viewCtrl) {
+    function PopoverComponent(navParams, navCtrl, storage, viewCtrl, toastCtrl, loadingCtrl, network) {
         this.navParams = navParams;
         this.navCtrl = navCtrl;
         this.storage = storage;
         this.viewCtrl = viewCtrl;
+        this.toastCtrl = toastCtrl;
+        this.loadingCtrl = loadingCtrl;
+        this.network = network;
         this.items = [];
         this.store = storage;
         this.frappe = window.frappe;
@@ -2843,11 +2964,12 @@ var PopoverComponent = /** @class */ (function () {
             this.items.push({ name: "deleteMany", label: "Delete" });
         }
         this.items.push({ label: "Settings", name: "settings" });
+        this.items.push({ label: "Sync Now", name: "sync_now" });
     };
     PopoverComponent.prototype.itemClick = function (item) {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
-            var _a, names_1, checkedBoxes;
+            var _a, names_1, checkedBoxes, loading, ld_1, temp_data, item_1, sd, i, toast;
             return __generator(this, function (_b) {
                 switch (_b.label) {
                     case 0:
@@ -2857,20 +2979,22 @@ var PopoverComponent = /** @class */ (function () {
                             case "delete": return [3 /*break*/, 2];
                             case "deleteMany": return [3 /*break*/, 4];
                             case "edit": return [3 /*break*/, 6];
+                            case "sync_now": return [3 /*break*/, 7];
                         }
-                        return [3 /*break*/, 7];
+                        return [3 /*break*/, 15];
                     case 1:
+                        this.viewCtrl.dismiss();
                         this.navCtrl.push(__WEBPACK_IMPORTED_MODULE_2__pages_home_home__["a" /* HomePage */], {
                             title: "Settings"
                         });
-                        return [3 /*break*/, 7];
+                        return [3 /*break*/, 15];
                     case 2: return [4 /*yield*/, this.frappe.db.delete("ToDo", this.me.item.name)
                             .then(function (r) {
                             _this.me.navCtrl.pop();
                         })];
                     case 3:
                         _b.sent();
-                        return [3 /*break*/, 7];
+                        return [3 /*break*/, 15];
                     case 4:
                         names_1 = [];
                         checkedBoxes = Array.from(document.querySelectorAll('.checkbox-checked'));
@@ -2882,13 +3006,57 @@ var PopoverComponent = /** @class */ (function () {
                             })];
                     case 5:
                         _b.sent();
-                        return [3 /*break*/, 7];
+                        return [3 /*break*/, 15];
                     case 6:
                         this.me.update = true;
                         this.me.disabled = false;
                         this.viewCtrl.dismiss();
-                        return [3 /*break*/, 7];
-                    case 7: return [2 /*return*/];
+                        return [3 /*break*/, 15];
+                    case 7:
+                        if (!(this.network.type == 'wifi' || this.network.type == '4g' || this.network.type == '3g')) return [3 /*break*/, 13];
+                        this.viewCtrl.dismiss();
+                        loading = this.loadingCtrl.create({
+                            content: 'Syncing...'
+                        });
+                        loading.present();
+                        ld_1 = [], temp_data = void 0, sd = [];
+                        return [4 /*yield*/, this.storage.get("local_data").then(function (r) {
+                                ld_1 = r;
+                            })];
+                    case 8:
+                        _b.sent();
+                        i = 0;
+                        _b.label = 9;
+                    case 9:
+                        if (!(i < ld_1.length)) return [3 /*break*/, 12];
+                        item_1 = ld_1[i];
+                        if (item_1) {
+                            temp_data = { "subject": item_1.subject, "description": item_1.description,
+                                "status": item_1.status };
+                        }
+                        return [4 /*yield*/, this.frappe.db.insert("ToDo", temp_data)];
+                    case 10:
+                        _b.sent();
+                        _b.label = 11;
+                    case 11:
+                        i++;
+                        return [3 /*break*/, 9];
+                    case 12:
+                        this.storage.set("local_data", []);
+                        loading.dismiss();
+                        return [3 /*break*/, 14];
+                    case 13:
+                        toast = this.toastCtrl.create({
+                            message: 'Not connected to any network!',
+                            duration: 1000,
+                            position: 'bottom'
+                        });
+                        toast.present();
+                        _b.label = 14;
+                    case 14:
+                        this.me.ionViewDidEnter();
+                        return [3 /*break*/, 15];
+                    case 15: return [2 /*return*/];
                 }
             });
         });
@@ -2900,27 +3068,28 @@ var PopoverComponent = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
             selector: 'popover',template:/*ion-inline-start:"/Users/allen/Projects/ToDo/src/components/popover/popover.html"*/'<div class="popover-container">\n<ion-list>\n	<ion-item *ngFor="let item of items" (click)="itemClick(item)">\n		{{ item.label }}\n	</ion-item>\n</ion-list>\n</div>\n'/*ion-inline-end:"/Users/allen/Projects/ToDo/src/components/popover/popover.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_3__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ViewController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_network__["a" /* Network */]])
     ], PopoverComponent);
     return PopoverComponent;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=popover.js.map
 
 /***/ }),
 
-/***/ 90:
+/***/ 91:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return HomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__frappe__ = __webpack_require__(170);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__to_do_list_to_do_list__ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(53);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__ = __webpack_require__(307);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__frappe__ = __webpack_require__(171);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__to_do_list_to_do_list__ = __webpack_require__(48);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__ = __webpack_require__(47);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -2979,6 +3148,7 @@ var HomePage = /** @class */ (function () {
         this.network = network;
         this.toastCtrl = toastCtrl;
         this.navParams = navParams;
+        this.setupLocalData();
     }
     HomePage.prototype.ionViewDidEnter = function () {
         return __awaiter(this, void 0, void 0, function () {
@@ -2998,11 +3168,11 @@ var HomePage = /** @class */ (function () {
                         temp = this.navParams.get("title");
                         if (temp) {
                             this.title = temp;
-                            this.but = "Save";
+                            this.save_connect = "Save";
                         }
                         else {
                             this.title = "ToDo";
-                            this.but = "Connect";
+                            this.save_connect = "Connect";
                         }
                         this.frappe = window.frappe;
                         return [4 /*yield*/, this.storage.get("user").then(function (val) {
@@ -3030,23 +3200,17 @@ var HomePage = /** @class */ (function () {
     HomePage.prototype.connect = function () {
         return __awaiter(this, void 0, void 0, function () {
             var _this = this;
-            var me, loading_1, toast;
+            var me, toast;
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
                         me = this;
                         if (!this.user) return [3 /*break*/, 2];
-                        loading_1 = this.loadingCtrl.create({
-                            content: 'Please wait...'
-                        });
-                        loading_1.present();
                         this.storage.set('server', this.server);
                         this.storage.set('user', this.user);
                         return [4 /*yield*/, Object(__WEBPACK_IMPORTED_MODULE_2__frappe__["a" /* default */])(this.server).then(function (r) {
-                                // route to ToDo page and dismiss loading
                                 _this.frappe = r;
                                 me.navCtrl.push(__WEBPACK_IMPORTED_MODULE_3__to_do_list_to_do_list__["a" /* ToDoListPage */]);
-                                loading_1.dismiss();
                             })];
                     case 1:
                         _a.sent();
@@ -3064,6 +3228,30 @@ var HomePage = /** @class */ (function () {
             });
         });
     };
+    HomePage.prototype.setupLocalData = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var _this = this;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, this.storage.get("local_data").then(function (r) {
+                            if (!r) {
+                                _this.storage.set("local_data", []);
+                            }
+                        })];
+                    case 1:
+                        _a.sent();
+                        return [4 /*yield*/, this.storage.get("serv_data").then(function (r) {
+                                if (!r) {
+                                    _this.storage.set("serv_data", []);
+                                }
+                            })];
+                    case 2:
+                        _a.sent();
+                        return [2 /*return*/];
+                }
+            });
+        });
+    };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["D" /* Input */])(),
         __metadata("design:type", Object)
@@ -3074,19 +3262,20 @@ var HomePage = /** @class */ (function () {
     ], HomePage.prototype, "server", void 0);
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/allen/Projects/ToDo/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      {{ title }}\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<div text-center>\n		<ion-img width="200" height="200" src="../assets/icon/frappe.png"></ion-img>\n	</div>\n\n	<ion-item>\n		<ion-label floating>User</ion-label>\n		<ion-input type="text" id="user" [(ngModel)]="user"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-label floating>Server</ion-label>\n		<ion-input type="text" id="server" [(ngModel)]="server"></ion-input>\n	</ion-item>\n\n	<div padding>\n		<button block ion-button (click)="connect()"> {{ but }} </button>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/Projects/ToDo/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/Users/allen/Projects/ToDo/src/pages/home/home.html"*/'<ion-header>\n  <ion-navbar>\n    <ion-title>\n      {{ title }}\n    </ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n	<div text-center>\n		<ion-img width="200" height="200" src="../assets/icon/frappe.png"></ion-img>\n	</div>\n\n	<ion-item>\n		<ion-label floating>User</ion-label>\n		<ion-input type="text" id="user" [(ngModel)]="user"></ion-input>\n	</ion-item>\n\n	<ion-item>\n		<ion-label floating>Server</ion-label>\n		<ion-input type="text" id="server" [(ngModel)]="server"></ion-input>\n	</ion-item>\n\n	<div padding>\n		<button block ion-button (click)="connect()"> {{ save_connect }} </button>\n	</div>\n</ion-content>\n'/*ion-inline-end:"/Users/allen/Projects/ToDo/src/pages/home/home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__["a" /* Network */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__["a" /* Network */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]) === "function" && _f || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_5__ionic_native_network__["a" /* Network */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavParams */]])
     ], HomePage);
     return HomePage;
-    var _a, _b, _c, _d, _e, _f;
 }());
 
 //# sourceMappingURL=home.js.map
 
 /***/ }),
 
-/***/ 91:
+/***/ 92:
 /***/ (function(module, exports) {
 
 module.exports = class Observable {
