@@ -1,9 +1,9 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      {{ title }}
-    </ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<ion-title>
+			To-Do
+		</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content padding>
@@ -12,16 +12,17 @@
 	</div>
 
 	<ion-item>
-		<ion-label floating>User</ion-label>
-		<ion-input type="text" id="user" [(ngModel)]="user"></ion-input>
-	</ion-item>
-
-	<ion-item>
 		<ion-label floating>Server</ion-label>
 		<ion-input type="text" id="server" [(ngModel)]="server"></ion-input>
 	</ion-item>
 
 	<div padding>
-		<button block ion-button (click)="connect()"> {{ save_connect }} </button>
+		<button block ion-button (click)="validate_server(server)"> Connect </button>
 	</div>
+
+	<div *ngIf="server_list && server_list.length" padding class="text-muted"> Recents: </div>
+	<div *ngFor="let data of server_list;" padding-left padding-bottom>
+		<a (click)="fillServer(data)"> {{ data }} </a>
+	</div>
+
 </ion-content>

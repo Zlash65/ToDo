@@ -2,8 +2,9 @@ import { Component, Input, ViewChild } from '@angular/core';
 import { NavController, LoadingController, ToastController, NavParams } from 'ionic-angular';
 import initFrappe from "../../frappe";
 import { ToDoListPage } from '../to-do-list/to-do-list';
+import { LoginPage } from '../login/login';
 import { Storage } from '@ionic/storage';
-import { Network } from '@ionic-native/network';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'page-home',
@@ -11,76 +12,82 @@ import { Network } from '@ionic-native/network';
 })
 export class HomePage {
 	frappe:any;
-	title:any;
+	server_list: Array<String> = [];
 	save_connect:String;
-	@Input() user;
 	@Input() server;
 
 	constructor(public navCtrl: NavController, public loadingCtrl: LoadingController,
-		private storage: Storage, private network: Network, private toastCtrl: ToastController,
-		public navParams: NavParams) {
-		this.setupLocalData();
+		private storage: Storage, private toastCtrl: ToastController,
+		public navParams: NavParams, private httpClient: HttpClient) {
+			this.frappe = (<any>window).frappe;
+			this.setupLocalData();
 	}
 
-	async ionViewDidEnter() {
-		// watch network for a connection
-		this.network.onConnect().subscribe(() => {
-			console.log('network connected!');
-		});
-
-		// watch network for a disconnection
-		this.network.onDisconnect().subscribe(() => {
-			console.log('network disconnected!');
-		});
-
-		let temp = this.navParams.get("title");
-
-		if(temp){
-			this.title = temp;
-			this.save_connect = "Save";
-		} else {
-			this.title = "ToDo";
-			this.save_connect = "Connect";
-		}
-
-		this.frappe = (<any>window).frappe;
-
-		await this.storage.get("user").then((val) => {
-			if(val) {
-				this.user = val;
+	async ionViewDidLoad() {
+		await this.storage.get("servers").then(servers => {
+			if(servers){
+				this.server_list = servers;
+			} else {
+				this.server_list = [];
 			}
 		});
-		
-		await this.storage.get("server").then((val) => {
-			if(val) {
-				this.server = val;
-			}
-		});
-
-		if(this.user && this.server && this.title != "Settings") {
-			this.connect();
-		}
 	}
 
-	async connect() {
-		var me = this;
+	validate_server(server: string) {
+		let me = this;
 
-		if(this.user) {
-			this.storage.set('server', this.server);
-			this.storage.set('user', this.user);
-			await initFrappe(this.server).then(r => {
-				this.frappe = r;
-				me.navCtrl.push(ToDoListPage);
-			});
-		} else {
-			let toast = this.toastCtrl.create({
-				message: 'User is mandatory',
-				duration: 2000,
-				position: 'bottom'
-			});
-			
-			toast.present();
+		if(!server) {
+			this.retry_server();
+			return false;
+		} 
+
+		select(server);
+
+		function select(server) {
+			server = me.strip_trailing_slash(server);
+			me.save_server_in_recent(server);
+			me.connect(server);
 		}
+
+	}
+
+	retry_server() {
+		alert('Does not seem like a valid server address. Please try again.');
+		return;
+	}
+
+	strip_trailing_slash(server) {
+        return server.replace(/(http[s]?:\/\/[^\/]*)(.*)/, "$1");
+	}
+	
+	async save_server_in_recent(server) {
+		// retrieve server list from storage. Add server to the list if not already in it.
+		await this.storage.get("servers").then(result => {
+			if(result){
+				if(!result.includes(server)){
+					result.push(server);
+					this.server_list = result;
+				}
+			} else {
+				this.server_list.push(server);
+			}
+		});
+		this.server_list.reverse().splice(2);
+		this.storage.set("servers", this.server_list);
+	}
+
+	fillServer(server) {
+		this.server = server;
+	}
+
+	async connect(server) {
+		let me = this;
+
+		await initFrappe(this.server).then(r => {
+			me.frappe = r;
+			me.storage.set("server", me.server);
+			me.navCtrl.push(LoginPage);
+		});
 	}
 
 	async setupLocalData() {
