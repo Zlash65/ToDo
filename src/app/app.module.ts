@@ -9,9 +9,12 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ToDoListPage } from '../pages/to-do-list/to-do-list';
 import { DisplayToDoPage } from '../pages/display-to-do/display-to-do';
+import { LoginPage } from '../pages/login/login';
 import { PopoverComponent } from '../components/popover/popover';
 import initFrappe from "../frappe";
 import { Network } from '@ionic-native/network';
+import { HTTP } from '@ionic-native/http';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,10 +22,12 @@ import { Network } from '@ionic-native/network';
 	HomePage,
 	ToDoListPage,
 	DisplayToDoPage,
+	LoginPage,
 	PopoverComponent
   ],
   imports: [
-    BrowserModule,
+	BrowserModule,
+	HttpClientModule,
 	IonicModule.forRoot(MyApp),
 	IonicStorageModule.forRoot()
   ],
@@ -32,12 +37,16 @@ import { Network } from '@ionic-native/network';
 	HomePage,
 	ToDoListPage,
 	DisplayToDoPage,
+	LoginPage,
 	PopoverComponent
   ],
   providers: [
     StatusBar,
 	SplashScreen,
 	Network,
+	HTTP,
+	HttpClientModule,
+	HttpClient,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -3,10 +3,12 @@ import { Platform, ToastController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { App } from 'ionic-angular';
+import { Storage } from '@ionic/storage';
 
 import { HomePage } from '../pages/home/home';
 import { ToDoListPage } from '../pages/to-do-list/to-do-list';
 import { DisplayToDoPage } from '../pages/display-to-do/display-to-do';
+import { LoginPage } from '../pages/login/login';
 @Component({
   templateUrl: 'app.html'
 })
@@ -15,7 +17,7 @@ export class MyApp {
 	lastBack:any;
 
 	constructor(platform: Platform, statusBar: StatusBar, splashScreen: SplashScreen, private app: App,
-		public toastCtrl: ToastController) {
+		public toastCtrl: ToastController, private storage: Storage) {
 
 		platform.ready().then(() => {
 		// Okay, so the platform is ready and our plugins are available.
@@ -31,7 +33,8 @@ export class MyApp {
 					overlay.dismiss();
 				}
 				else if(nav.getActive().instance instanceof HomePage
-					|| nav.getActive().instance instanceof ToDoListPage) {
+					|| nav.getActive().instance instanceof ToDoListPage
+					|| nav.getActive().instance instanceof LoginPage) {
 						if(Date.now() - this.lastBack < 500) {
 							platform.exitApp();
 						} else {
