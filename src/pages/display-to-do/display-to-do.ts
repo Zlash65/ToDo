@@ -25,19 +25,16 @@ export class DisplayToDoPage {
 
 
 	constructor(public navCtrl: NavController, public navParams: NavParams,
-		public popoverCtrl: PopoverController, private network: Network, private storage: Storage) {
-			// watch network for a connection
-			this.network.onConnect().subscribe(() => {
-				console.log('network connected!');
-			});
-
-			// watch network for a disconnection
-			this.network.onDisconnect().subscribe(() => {
-				console.log('network disconnected!');
-			});
-		}
+		public popoverCtrl: PopoverController, private network: Network, private storage: Storage) { }
 
 	ionViewDidLoad() {
+		this.storage.get("token").then(r => {
+			if(r) {
+				if(!this.frappe.session) this.frappe.session = {"token": r};
+				else this.frappe.session["token"] = r;
+			}
+		});
+
 		this.statusList = ["Open", "Closed"];
 		this.frappe = (<any>window).frappe;
 		this.disabled =  this.navParams.get('disabled');
@@ -65,6 +62,7 @@ export class DisplayToDoPage {
 
 	async saveToDo() {
 		let temp_data = {"subject": this.subject, "description": this.description, "status": this.status };
+
 		if(this.network.type=='wifi' || this.network.type=='4g' || this.network.type=='3g') {
 			await this.frappe.db.insert("ToDo", temp_data)
 				.then(r => {
@@ -97,6 +95,8 @@ export class DisplayToDoPage {
 		if(this.network.type=='wifi' || this.network.type=='4g' || this.network.type=='3g') {
 			await this.frappe.db.update("ToDo", this.item)
 				.then(r => {
+					this.item = r;
+					this.title = this.item.name;
 			});
 		}
 		else {

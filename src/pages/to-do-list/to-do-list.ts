@@ -20,18 +20,8 @@ export class ToDoListPage {
 
 	constructor(public navCtrl: NavController, public navParams: NavParams,
 		private toastCtrl: ToastController, public popoverCtrl: PopoverController,
-		private storage: Storage, private viewCtrl: ViewController,
-		private network: Network, public loadingCtrl: LoadingController) {
-			// watch network for a connection
-			this.network.onConnect().subscribe(() => {
-				console.log('network connected!');
-			});
-
-			// watch network for a disconnection
-			this.network.onDisconnect().subscribe(() => {
-				console.log('network disconnected!');
-			});
-		}
+		private storage: Storage, private viewCtrl: ViewController, private app: App,
+		private network: Network, public loadingCtrl: LoadingController) { }
 
 	doRefresh(refresher) {
 		this.ionViewDidEnter();
@@ -49,15 +39,26 @@ export class ToDoListPage {
 		}
 	}
 
-	ionViewDidEnter() {
+	async ionViewDidEnter() {
+
+		await this.storage.get("token").then(r => {
+			if(r) {
+				if(!this.frappe.session) this.frappe.session = {"token": r};
+				else this.frappe.session["token"] = r;
+			}
+		});
+
 		if(this.popover){
 			this.popover.dismiss();
 			this.popover = null;
 		}
+
 		let loading = this.loadingCtrl.create({
-			content: 'Please wait...'
+			content: 'Refreshing'
 		});
 		loading.present();
+
+
 		setTimeout(() => {
 			if(this.network.type=='wifi' || this.network.type=='4g' || this.network.type=='3g') {
 				this.loadData();
@@ -102,7 +103,7 @@ export class ToDoListPage {
 		} else {
 			await this.storage.set("serv_data", serv_data);
 		}
-
+		console.log(ld, serv_data);
 		this.data = ld.concat(serv_data);
 	}
 
