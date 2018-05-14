@@ -1,0 +1,6 @@
+[submodule "node_modules/frappejs/-f"]
+	path = node_modules/frappejs/-f
+	url = https://www.github.com/frappe/frappejs
+[submodule "node_modules/frappejs/frappejs"]
+	path = node_modules/frappejs/frappejs
+	url = https://www.github.com/frappe/frappejs
