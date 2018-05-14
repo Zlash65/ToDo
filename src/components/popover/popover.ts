@@ -51,6 +51,7 @@ export class PopoverComponent {
 				break;
 
 			case "delete":
+				if(this.delete_error()) break;
 				await this.frappe.db.delete("ToDo", this.me.item.name)
 					.then(r => {
 						this.me.navCtrl.pop();
@@ -58,6 +59,7 @@ export class PopoverComponent {
 				break;
 
 			case "deleteMany":
+				if(this.delete_error()) break;
 				let names = [];
 				let checkedBoxes = Array.from(document.querySelectorAll('.checkbox-checked'));
 				checkedBoxes.forEach(element => { names.push(element.parentElement.id) });
@@ -113,6 +115,25 @@ export class PopoverComponent {
 
 	close() {
 		this.viewCtrl.dismiss();
+	}
+
+	async delete_error() {
+		let ld = []
+		await this.storage.get("local_data").then(r => {
+			ld = r;
+		});
+
+		if(ld.length>0) {
+			let toast = this.toastCtrl.create({
+				message: 'Please sync the data to avoid unwanted loss',
+				duration: 1000,
+				position: 'bottom'
+			});
+			toast.present();
+			return true;
+		} else {
+			return false;
+		}
 	}
 
 }
