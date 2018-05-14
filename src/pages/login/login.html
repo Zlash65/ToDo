@@ -1,0 +1,50 @@
+<ion-header>
+	<ion-navbar>
+		<ion-title>
+			Login
+		</ion-title>
+	</ion-navbar>
+</ion-header>
+	  
+<ion-content padding>
+	<div text-center>
+		<ion-img width="200" height="200" src="../assets/icon/frappe.png"></ion-img>
+	</div>
+	  
+	<ion-item>
+		<ion-label floating>Email</ion-label>
+		<ion-input type="text" id="user" [(ngModel)]="email"></ion-input>
+	</ion-item>
+
+	<ion-item *ngIf="signup">
+		<ion-label floating>First Name</ion-label>
+		<ion-input type="text" id="first_name" [(ngModel)]="first_name"></ion-input>
+	</ion-item>
+	  
+	<ion-item>
+		<ion-label floating>Password</ion-label>
+		<ion-input type="password" id="server" [(ngModel)]="password"></ion-input>
+	</ion-item>
+	  
+	<div padding *ngIf="!signup">
+		<button block ion-button (click)="login()"> login </button>
+	</div>
+
+	<div padding *ngIf="signup">
+		<button block ion-button (click)="signUp()"> Signup </button>
+	</div>
+
+	<div text-center *ngIf="!signup" class="text-muted">
+		<div (click)="enable_signUp()"> Not Registered? Signup now! </div>
+	</div>
+
+	<div text-center *ngIf="signup" class="text-muted">
+		<div (click)="disable_signUp()"> Already Registered? Login now! </div>
+	</div>
+
+	<div text-center padding-top class="text-muted">
+		<div (click)="change_server()"> Change server - {{ server }} </div>
+	</div>
+
+</ion-content>
+	  
